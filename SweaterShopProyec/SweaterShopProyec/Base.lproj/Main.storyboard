@@ -159,7 +159,7 @@
                                             <outlet property="delegate" destination="amO-Fw-bCO" id="w85-5z-cxP"/>
                                         </connections>
                                     </collectionView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-F2-puf">
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-F2-puf">
                                         <rect key="frame" x="120" y="120" width="150" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="CXh-yh-tYT"/>
@@ -194,6 +194,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="AJs-By-S2M"/>
                     <connections>
+                        <outlet property="mycollectionView" destination="D8h-QO-TRF" id="nes-76-WVf"/>
                         <outlet property="pages" destination="zEc-F2-puf" id="sEz-PH-fga"/>
                     </connections>
                 </viewController>
@@ -340,7 +341,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fce-jI-Frk"/>
+        <segue reference="CUK-s2-PhQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="login.png" width="224" height="225"/>
