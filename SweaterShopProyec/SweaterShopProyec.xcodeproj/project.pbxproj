@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B703785A2BD593ED00B6074C /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70378592BD593ED00B6074C /* CustomCollectionViewCell.swift */; };
+		B753D8C12BDEBF4400379C50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B753D8C02BDEBF4400379C50 /* GoogleService-Info.plist */; };
 		B77281A72BCAE7FC00D72453 /* bienvenido.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B77281A62BCAE7FC00D72453 /* bienvenido.jpeg */; };
 		B77281A92BCAEA2F00D72453 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = B77281A82BCAEA2F00D72453 /* login.png */; };
 		B7D90CD02BC32A160050D236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CCF2BC32A160050D236 /* AppDelegate.swift */; };
@@ -16,10 +17,13 @@
 		B7D90CD72BC32A160050D236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D90CD52BC32A160050D236 /* Main.storyboard */; };
 		B7D90CD92BC32A170050D236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D90CD82BC32A170050D236 /* Assets.xcassets */; };
 		B7D90CDC2BC32A170050D236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D90CDA2BC32A170050D236 /* LaunchScreen.storyboard */; };
+		E49F02256ABA961E022DB712 /* Pods_SweaterShopProyec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBF5B93898012F1AB6509AA /* Pods_SweaterShopProyec.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EBF5B93898012F1AB6509AA /* Pods_SweaterShopProyec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweaterShopProyec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70378592BD593ED00B6074C /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		B753D8C02BDEBF4400379C50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B77281A62BCAE7FC00D72453 /* bienvenido.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bienvenido.jpeg; path = ../../../../../Downloads/bienvenido.jpeg; sourceTree = "<group>"; };
 		B77281A82BCAEA2F00D72453 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login.png; path = ../../../../../Downloads/login.png; sourceTree = "<group>"; };
 		B7D90CCC2BC32A160050D236 /* SweaterShopProyec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaterShopProyec.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +34,8 @@
 		B7D90CD82BC32A170050D236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7D90CDB2BC32A170050D236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7D90CDD2BC32A170050D236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFCA504D071B350B3A5F66D /* Pods-SweaterShopProyec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweaterShopProyec.debug.xcconfig"; path = "Target Support Files/Pods-SweaterShopProyec/Pods-SweaterShopProyec.debug.xcconfig"; sourceTree = "<group>"; };
+		E524D6C01362EB5B97883BCC /* Pods-SweaterShopProyec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweaterShopProyec.release.xcconfig"; path = "Target Support Files/Pods-SweaterShopProyec/Pods-SweaterShopProyec.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49F02256ABA961E022DB712 /* Pods_SweaterShopProyec.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F10D18D77CB503DEB16E79A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFFCA504D071B350B3A5F66D /* Pods-SweaterShopProyec.debug.xcconfig */,
+				E524D6C01362EB5B97883BCC /* Pods-SweaterShopProyec.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B7D90CC32BC32A160050D236 = {
 			isa = PBXGroup;
 			children = (
 				B7D90CCE2BC32A160050D236 /* SweaterShopProyec */,
 				B7D90CCD2BC32A160050D236 /* Products */,
+				9F10D18D77CB503DEB16E79A /* Pods */,
+				E746ADDE41EE86F064A626D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,10 +88,19 @@
 				B7D90CD82BC32A170050D236 /* Assets.xcassets */,
 				B7D90CDA2BC32A170050D236 /* LaunchScreen.storyboard */,
 				B7D90CDD2BC32A170050D236 /* Info.plist */,
+				B753D8C02BDEBF4400379C50 /* GoogleService-Info.plist */,
 				B77281A62BCAE7FC00D72453 /* bienvenido.jpeg */,
 				B77281A82BCAEA2F00D72453 /* login.png */,
 			);
 			path = SweaterShopProyec;
+			sourceTree = "<group>";
+		};
+		E746ADDE41EE86F064A626D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EBF5B93898012F1AB6509AA /* Pods_SweaterShopProyec.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7D90CE02BC32A170050D236 /* Build configuration list for PBXNativeTarget "SweaterShopProyec" */;
 			buildPhases = (
+				914ABE636F5E86BC9874B60F /* [CP] Check Pods Manifest.lock */,
 				B7D90CC82BC32A160050D236 /* Sources */,
 				B7D90CC92BC32A160050D236 /* Frameworks */,
 				B7D90CCA2BC32A160050D236 /* Resources */,
+				635FEFAF0A4F5FA41FD741DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,10 +168,53 @@
 				B7D90CD92BC32A170050D236 /* Assets.xcassets in Resources */,
 				B77281A72BCAE7FC00D72453 /* bienvenido.jpeg in Resources */,
 				B7D90CD72BC32A160050D236 /* Main.storyboard in Resources */,
+				B753D8C12BDEBF4400379C50 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		635FEFAF0A4F5FA41FD741DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweaterShopProyec/Pods-SweaterShopProyec-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweaterShopProyec/Pods-SweaterShopProyec-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SweaterShopProyec/Pods-SweaterShopProyec-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		914ABE636F5E86BC9874B60F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweaterShopProyec-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7D90CC82BC32A160050D236 /* Sources */ = {
@@ -294,6 +366,7 @@
 		};
 		B7D90CE12BC32A170050D236 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFFCA504D071B350B3A5F66D /* Pods-SweaterShopProyec.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +395,7 @@
 		};
 		B7D90CE22BC32A170050D236 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E524D6C01362EB5B97883BCC /* Pods-SweaterShopProyec.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
