@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		B703785A2BD593ED00B6074C /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70378592BD593ED00B6074C /* CustomCollectionViewCell.swift */; };
 		B753D8C12BDEBF4400379C50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B753D8C02BDEBF4400379C50 /* GoogleService-Info.plist */; };
-		B77281A72BCAE7FC00D72453 /* bienvenido.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B77281A62BCAE7FC00D72453 /* bienvenido.jpeg */; };
-		B77281A92BCAEA2F00D72453 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = B77281A82BCAEA2F00D72453 /* login.png */; };
 		B7D90CD02BC32A160050D236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CCF2BC32A160050D236 /* AppDelegate.swift */; };
 		B7D90CD22BC32A160050D236 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CD12BC32A160050D236 /* SceneDelegate.swift */; };
 		B7D90CD42BC32A160050D236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CD32BC32A160050D236 /* ViewController.swift */; };
@@ -24,8 +22,6 @@
 		0EBF5B93898012F1AB6509AA /* Pods_SweaterShopProyec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweaterShopProyec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70378592BD593ED00B6074C /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		B753D8C02BDEBF4400379C50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B77281A62BCAE7FC00D72453 /* bienvenido.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bienvenido.jpeg; path = ../../../../../Downloads/bienvenido.jpeg; sourceTree = "<group>"; };
-		B77281A82BCAEA2F00D72453 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login.png; path = ../../../../../Downloads/login.png; sourceTree = "<group>"; };
 		B7D90CCC2BC32A160050D236 /* SweaterShopProyec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaterShopProyec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D90CCF2BC32A160050D236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7D90CD12BC32A160050D236 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,8 +85,6 @@
 				B7D90CDA2BC32A170050D236 /* LaunchScreen.storyboard */,
 				B7D90CDD2BC32A170050D236 /* Info.plist */,
 				B753D8C02BDEBF4400379C50 /* GoogleService-Info.plist */,
-				B77281A62BCAE7FC00D72453 /* bienvenido.jpeg */,
-				B77281A82BCAEA2F00D72453 /* login.png */,
 			);
 			path = SweaterShopProyec;
 			sourceTree = "<group>";
@@ -164,9 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D90CDC2BC32A170050D236 /* LaunchScreen.storyboard in Resources */,
-				B77281A92BCAEA2F00D72453 /* login.png in Resources */,
 				B7D90CD92BC32A170050D236 /* Assets.xcassets in Resources */,
-				B77281A72BCAE7FC00D72453 /* bienvenido.jpeg in Resources */,
 				B7D90CD72BC32A160050D236 /* Main.storyboard in Resources */,
 				B753D8C12BDEBF4400379C50 /* GoogleService-Info.plist in Resources */,
 			);
