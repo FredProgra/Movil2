@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B703785A2BD593ED00B6074C /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70378592BD593ED00B6074C /* CustomCollectionViewCell.swift */; };
-		B77281A72BCAE7FC00D72453 /* bienvenido.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B77281A62BCAE7FC00D72453 /* bienvenido.jpeg */; };
-		B77281A92BCAEA2F00D72453 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = B77281A82BCAEA2F00D72453 /* login.png */; };
+		B71CB6072BE802AB00960617 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B71CB6062BE802AB00960617 /* FirebaseAuth */; };
+		B71CB6092BE802AB00960617 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B71CB6082BE802AB00960617 /* FirebaseDatabase */; };
+		B71CB60B2BE8032B00960617 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71CB60A2BE8032A00960617 /* GoogleService-Info.plist */; };
+		B71CB60D2BE8035300960617 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB60C2BE8035300960617 /* LoginViewController.swift */; };
+		B71CB6122BE8053900960617 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB6112BE8053900960617 /* RegisterViewController.swift */; };
 		B7D90CD02BC32A160050D236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CCF2BC32A160050D236 /* AppDelegate.swift */; };
 		B7D90CD22BC32A160050D236 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CD12BC32A160050D236 /* SceneDelegate.swift */; };
 		B7D90CD42BC32A160050D236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CD32BC32A160050D236 /* ViewController.swift */; };
@@ -20,8 +23,9 @@
 
 /* Begin PBXFileReference section */
 		B70378592BD593ED00B6074C /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
-		B77281A62BCAE7FC00D72453 /* bienvenido.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bienvenido.jpeg; path = ../../../../../Downloads/bienvenido.jpeg; sourceTree = "<group>"; };
-		B77281A82BCAEA2F00D72453 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login.png; path = ../../../../../Downloads/login.png; sourceTree = "<group>"; };
+		B71CB60A2BE8032A00960617 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B71CB60C2BE8035300960617 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B71CB6112BE8053900960617 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B7D90CCC2BC32A160050D236 /* SweaterShopProyec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaterShopProyec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D90CCF2BC32A160050D236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7D90CD12BC32A160050D236 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71CB6092BE802AB00960617 /* FirebaseDatabase in Frameworks */,
+				B71CB6072BE802AB00960617 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,13 +71,14 @@
 				B70378592BD593ED00B6074C /* CustomCollectionViewCell.swift */,
 				B7D90CCF2BC32A160050D236 /* AppDelegate.swift */,
 				B7D90CD12BC32A160050D236 /* SceneDelegate.swift */,
+				B71CB60C2BE8035300960617 /* LoginViewController.swift */,
 				B7D90CD32BC32A160050D236 /* ViewController.swift */,
 				B7D90CD52BC32A160050D236 /* Main.storyboard */,
+				B71CB6112BE8053900960617 /* RegisterViewController.swift */,
 				B7D90CD82BC32A170050D236 /* Assets.xcassets */,
 				B7D90CDA2BC32A170050D236 /* LaunchScreen.storyboard */,
 				B7D90CDD2BC32A170050D236 /* Info.plist */,
-				B77281A62BCAE7FC00D72453 /* bienvenido.jpeg */,
-				B77281A82BCAEA2F00D72453 /* login.png */,
+				B71CB60A2BE8032A00960617 /* GoogleService-Info.plist */,
 			);
 			path = SweaterShopProyec;
 			sourceTree = "<group>";
@@ -92,6 +99,10 @@
 			dependencies = (
 			);
 			name = SweaterShopProyec;
+			packageProductDependencies = (
+				B71CB6062BE802AB00960617 /* FirebaseAuth */,
+				B71CB6082BE802AB00960617 /* FirebaseDatabase */,
+			);
 			productName = SweaterShopProyec;
 			productReference = B7D90CCC2BC32A160050D236 /* SweaterShopProyec.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +131,9 @@
 				Base,
 			);
 			mainGroup = B7D90CC32BC32A160050D236;
+			packageReferences = (
+				B71CB6052BE802AB00960617 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B7D90CCD2BC32A160050D236 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,9 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D90CDC2BC32A170050D236 /* LaunchScreen.storyboard in Resources */,
-				B77281A92BCAEA2F00D72453 /* login.png in Resources */,
+				B71CB60B2BE8032B00960617 /* GoogleService-Info.plist in Resources */,
 				B7D90CD92BC32A170050D236 /* Assets.xcassets in Resources */,
-				B77281A72BCAE7FC00D72453 /* bienvenido.jpeg in Resources */,
 				B7D90CD72BC32A160050D236 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +165,8 @@
 				B7D90CD42BC32A160050D236 /* ViewController.swift in Sources */,
 				B7D90CD02BC32A160050D236 /* AppDelegate.swift in Sources */,
 				B7D90CD22BC32A160050D236 /* SceneDelegate.swift in Sources */,
+				B71CB6122BE8053900960617 /* RegisterViewController.swift in Sources */,
+				B71CB60D2BE8035300960617 /* LoginViewController.swift in Sources */,
 				B703785A2BD593ED00B6074C /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +385,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B71CB6052BE802AB00960617 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B71CB6062BE802AB00960617 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B71CB6052BE802AB00960617 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B71CB6082BE802AB00960617 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B71CB6052BE802AB00960617 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7D90CC42BC32A160050D236 /* Project object */;
 }
