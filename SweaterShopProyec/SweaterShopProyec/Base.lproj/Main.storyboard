@@ -131,7 +131,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="wqE-VG-vjh" customClass="CollectionViewCell" customModule="SweaterShopProyec" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="wqE-VG-vjh" customClass="ProductoCollectionViewCell" customModule="SweaterShopProyec" customModuleProvider="target">
                                                 <rect key="frame" x="70" y="0.0" width="250" height="250"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OZe-Ei-dCT">
@@ -163,15 +163,14 @@
                                                 </collectionViewCellContentView>
                                                 <size key="customSize" width="250" height="250"/>
                                                 <connections>
-                                                    <outlet property="sweaterDetalle" destination="Bom-Hz-DX1" id="EtX-l9-p8J"/>
-                                                    <outlet property="sweaterImg" destination="HcX-PT-Uvh" id="yFo-zg-st3"/>
-                                                    <outlet property="sweaterimg" destination="HcX-PT-Uvh" id="tYv-I9-dkc"/>
+                                                    <outlet property="brandLabel" destination="Bom-Hz-DX1" id="nwX-Yk-Q3i"/>
+                                                    <outlet property="imageView" destination="HcX-PT-Uvh" id="jdJ-Uk-J1A"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
-                                            <outlet property="dataSource" destination="amO-Fw-bCO" id="OF8-AX-HwV"/>
-                                            <outlet property="delegate" destination="amO-Fw-bCO" id="cMK-o7-HgS"/>
+                                            <outlet property="dataSource" destination="amO-Fw-bCO" id="uJf-IF-sk3"/>
+                                            <outlet property="delegate" destination="amO-Fw-bCO" id="I41-ha-65u"/>
                                         </connections>
                                     </collectionView>
                                 </subviews>
@@ -210,7 +209,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="AJs-By-S2M"/>
                     <connections>
-                        <outlet property="collectionView" destination="YNr-v2-WzQ" id="6GZ-JJ-PyJ"/>
+                        <outlet property="collectionView" destination="YNr-v2-WzQ" id="0it-pL-QtN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tka-KN-OWU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
