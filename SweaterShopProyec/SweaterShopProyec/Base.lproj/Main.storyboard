@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fjt-h4-Zj7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="axH-Cg-UrK">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -97,7 +97,7 @@
                         <outlet property="activityIndicator" destination="Mjw-OP-0dK" id="QPs-im-V4S"/>
                         <outlet property="emailTextField" destination="3yG-6N-V2f" id="Tph-nF-mcu"/>
                         <outlet property="passwordTextField" destination="mFB-v1-KQR" id="Zvn-9a-EpH"/>
-                        <segue destination="amO-Fw-bCO" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="TFq-Rp-ALO"/>
+                        <segue destination="axH-Cg-UrK" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="TFq-Rp-ALO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJb-QI-ZKK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -113,7 +113,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knitted Sweater.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyH-KN-Uhy">
-                                <rect key="frame" x="30" y="56" width="212" height="24"/>
+                                <rect key="frame" x="30" y="101" width="330" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -122,7 +122,7 @@
                                 <rect key="frame" x="0.0" y="147" width="390" height="663"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YNr-v2-WzQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="618"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="642-uS-QtY">
                                             <size key="itemSize" width="223" height="266"/>
@@ -130,6 +130,10 @@
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
+                                        <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="KWp-aR-ABU">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="618"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </activityIndicatorView>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="wqE-VG-vjh" customClass="ProductoCollectionViewCell" customModule="SweaterShopProyec" customModuleProvider="target">
                                                 <rect key="frame" x="70" y="0.0" width="250" height="250"/>
@@ -138,10 +142,10 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweater-1" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-PT-Uvh">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-PT-Uvh">
                                                             <rect key="frame" x="5" y="5" width="240" height="190"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bom-Hz-DX1">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bom-Hz-DX1">
                                                             <rect key="frame" x="5" y="203" width="237" height="39"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="39" id="1IM-62-Civ"/>
@@ -184,7 +188,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="6Ca-3u-OdN"/>
                             </scrollView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ds4-hz-EGc">
-                                <rect key="frame" x="0.0" y="91" width="390" height="56"/>
+                                <rect key="frame" x="0.0" y="136" width="390" height="56"/>
                                 <color key="barTintColor" red="1" green="0.96634730639999999" blue="0.87710832819999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -193,28 +197,64 @@
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TNT-OW-paK"/>
-                        <color key="backgroundColor" red="1" green="0.96477124410000004" blue="0.87410559350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.95801708299664157" blue="0.87014726116488894" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="TNT-OW-paK" firstAttribute="trailing" secondItem="cyH-KN-Uhy" secondAttribute="trailing" constant="148" id="1yC-iA-NLN"/>
+                            <constraint firstItem="TNT-OW-paK" firstAttribute="trailing" secondItem="cyH-KN-Uhy" secondAttribute="trailing" constant="30" id="1yC-iA-NLN"/>
                             <constraint firstItem="TNT-OW-paK" firstAttribute="trailing" secondItem="zy5-Lh-5dE" secondAttribute="trailing" id="92o-uO-Px2"/>
                             <constraint firstItem="TNT-OW-paK" firstAttribute="bottom" secondItem="zy5-Lh-5dE" secondAttribute="bottom" id="JC1-2J-AnG"/>
                             <constraint firstItem="zy5-Lh-5dE" firstAttribute="top" secondItem="Ds4-hz-EGc" secondAttribute="bottom" id="O6U-wF-EcQ"/>
                             <constraint firstItem="Ds4-hz-EGc" firstAttribute="top" secondItem="cyH-KN-Uhy" secondAttribute="bottom" constant="11" id="Txn-a6-wt6"/>
                             <constraint firstItem="Ds4-hz-EGc" firstAttribute="leading" secondItem="TNT-OW-paK" secondAttribute="leading" id="dwQ-rn-hig"/>
-                            <constraint firstItem="cyH-KN-Uhy" firstAttribute="top" secondItem="TNT-OW-paK" secondAttribute="top" constant="9" id="kon-C1-kcI"/>
+                            <constraint firstItem="cyH-KN-Uhy" firstAttribute="top" secondItem="TNT-OW-paK" secondAttribute="top" constant="10" id="kon-C1-kcI"/>
                             <constraint firstItem="Ds4-hz-EGc" firstAttribute="trailing" secondItem="TNT-OW-paK" secondAttribute="trailing" id="m5W-h3-sya"/>
                             <constraint firstItem="cyH-KN-Uhy" firstAttribute="leading" secondItem="TNT-OW-paK" secondAttribute="leading" constant="30" id="wd8-sV-Bqn"/>
                             <constraint firstItem="zy5-Lh-5dE" firstAttribute="leading" secondItem="TNT-OW-paK" secondAttribute="leading" id="xFu-pl-zng"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="AJs-By-S2M"/>
+                    <navigationItem key="navigationItem" id="AJs-By-S2M">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="TwJ-gi-geb"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="KWp-aR-ABU" id="a6M-kH-84W"/>
                         <outlet property="collectionView" destination="YNr-v2-WzQ" id="0it-pL-QtN"/>
+                        <outlet property="searchBar" destination="Ds4-hz-EGc" id="2P3-Xh-AVp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tka-KN-OWU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2209.2307692307691" y="620.61611374407585"/>
+            <point key="canvasLocation" x="3138.4615384615386" y="620.61611374407585"/>
+        </scene>
+        <!--Detalle View Controller-->
+        <scene sceneID="Ujg-L8-56L">
+            <objects>
+                <viewController storyboardIdentifier="DetalleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cNa-W6-2UO" customClass="DetalleViewController" customModule="SweaterShopProyec" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JCW-yq-xIy">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fh8-KY-f0y">
+                                <rect key="frame" x="48" y="135" width="294" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knitted Sweater.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIZ-RU-UuZ">
+                                <rect key="frame" x="30" y="57" width="330" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NAq-BS-sRw"/>
+                        <color key="backgroundColor" red="0.75755795281353366" green="1" blue="0.83218574558735003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="aIZ-RU-UuZ" firstAttribute="top" secondItem="NAq-BS-sRw" secondAttribute="top" constant="10" id="2vg-gI-84w"/>
+                            <constraint firstAttribute="trailing" secondItem="aIZ-RU-UuZ" secondAttribute="trailing" constant="30" id="VLS-gy-gZj"/>
+                            <constraint firstItem="aIZ-RU-UuZ" firstAttribute="leading" secondItem="NAq-BS-sRw" secondAttribute="leading" constant="30" id="X58-j4-52L"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3i-9M-Pbn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4107.6923076923076" y="633.41232227488149"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="fc6-7v-KzV">
@@ -342,7 +382,7 @@
                         <outlet property="password2TextField" destination="lEe-Xh-cCr" id="arl-5o-eY7"/>
                         <outlet property="passwordTextField" destination="lsD-fP-naI" id="111-th-Vd7"/>
                         <outlet property="userFieldText" destination="A2h-sn-rLD" id="c9u-fv-WtV"/>
-                        <segue destination="amO-Fw-bCO" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="RKD-lw-wek"/>
+                        <segue destination="axH-Cg-UrK" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="RKD-lw-wek"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcQ-j9-EZk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -368,14 +408,31 @@
             </objects>
             <point key="canvasLocation" x="890.76923076923072" y="-81.042654028436019"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hQd-Ma-tjh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="axH-Cg-UrK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c85-5U-vDj">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="amO-Fw-bCO" kind="relationship" relationship="rootViewController" id="ITh-I9-45h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmA-rT-NnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2209.2307692307691" y="620.61611374407585"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TFq-Rp-ALO"/>
+        <segue reference="RKD-lw-wek"/>
         <segue reference="Y9v-g8-sJf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="login" width="450" height="450"/>
-        <image name="sweater-1" width="555" height="750"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
