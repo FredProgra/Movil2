@@ -3,28 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBy4gJXqxs-WvRiUlzQDw5XNb1p5jp9WeU</string>
+	<string>AIzaSyBZ_Ng6VC3JgJunjeH9cdToLcYhGva_9Sw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1056033719925</string>
+	<string>519890091468</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>cibertech.SweaterShopProyec</string>
 	<key>PROJECT_ID</key>
-	<string>app-moviles2</string>
+	<string>sweater-app-44bbb</string>
 	<key>STORAGE_BUCKET</key>
-	<string>app-moviles2.appspot.com</string>
+	<string>sweater-app-44bbb.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1056033719925:ios:22af54f34a6e92938b9a3c</string>
+	<string>1:519890091468:ios:268e9dc30713d84618f169</string>
 </dict>
 </plist>
