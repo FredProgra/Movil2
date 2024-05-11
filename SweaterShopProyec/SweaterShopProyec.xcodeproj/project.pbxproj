@@ -10,9 +10,10 @@
 		B703785A2BD593ED00B6074C /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70378592BD593ED00B6074C /* CustomCollectionViewCell.swift */; };
 		B71CB6072BE802AB00960617 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B71CB6062BE802AB00960617 /* FirebaseAuth */; };
 		B71CB6092BE802AB00960617 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B71CB6082BE802AB00960617 /* FirebaseDatabase */; };
-		B71CB60B2BE8032B00960617 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71CB60A2BE8032A00960617 /* GoogleService-Info.plist */; };
 		B71CB60D2BE8035300960617 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB60C2BE8035300960617 /* LoginViewController.swift */; };
 		B71CB6122BE8053900960617 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB6112BE8053900960617 /* RegisterViewController.swift */; };
+		B7BD38912BEFCC6C0027A75C /* SweaterShopProyec.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7BD388F2BEFCC6C0027A75C /* SweaterShopProyec.xcdatamodeld */; };
+		B7BD38932BEFD0B90027A75C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7BD38922BEFD0B90027A75C /* GoogleService-Info.plist */; };
 		B7D90CD02BC32A160050D236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CCF2BC32A160050D236 /* AppDelegate.swift */; };
 		B7D90CD22BC32A160050D236 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CD12BC32A160050D236 /* SceneDelegate.swift */; };
 		B7D90CD42BC32A160050D236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D90CD32BC32A160050D236 /* ViewController.swift */; };
@@ -23,9 +24,10 @@
 
 /* Begin PBXFileReference section */
 		B70378592BD593ED00B6074C /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
-		B71CB60A2BE8032A00960617 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B71CB60C2BE8035300960617 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B71CB6112BE8053900960617 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B7BD38902BEFCC6C0027A75C /* SweaterShopProyec.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SweaterShopProyec.xcdatamodel; sourceTree = "<group>"; };
+		B7BD38922BEFD0B90027A75C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7D90CCC2BC32A160050D236 /* SweaterShopProyec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaterShopProyec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D90CCF2BC32A160050D236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7D90CD12BC32A160050D236 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +80,8 @@
 				B7D90CD82BC32A170050D236 /* Assets.xcassets */,
 				B7D90CDA2BC32A170050D236 /* LaunchScreen.storyboard */,
 				B7D90CDD2BC32A170050D236 /* Info.plist */,
-				B71CB60A2BE8032A00960617 /* GoogleService-Info.plist */,
+				B7BD38922BEFD0B90027A75C /* GoogleService-Info.plist */,
+				B7BD388F2BEFCC6C0027A75C /* SweaterShopProyec.xcdatamodeld */,
 			);
 			path = SweaterShopProyec;
 			sourceTree = "<group>";
@@ -149,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D90CDC2BC32A170050D236 /* LaunchScreen.storyboard in Resources */,
-				B71CB60B2BE8032B00960617 /* GoogleService-Info.plist in Resources */,
+				B7BD38932BEFD0B90027A75C /* GoogleService-Info.plist in Resources */,
 				B7D90CD92BC32A170050D236 /* Assets.xcassets in Resources */,
 				B7D90CD72BC32A160050D236 /* Main.storyboard in Resources */,
 			);
@@ -167,6 +170,7 @@
 				B7D90CD22BC32A160050D236 /* SceneDelegate.swift in Sources */,
 				B71CB6122BE8053900960617 /* RegisterViewController.swift in Sources */,
 				B71CB60D2BE8035300960617 /* LoginViewController.swift in Sources */,
+				B7BD38912BEFCC6C0027A75C /* SweaterShopProyec.xcdatamodeld in Sources */,
 				B703785A2BD593ED00B6074C /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,19 @@
 			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		B7BD388F2BEFCC6C0027A75C /* SweaterShopProyec.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B7BD38902BEFCC6C0027A75C /* SweaterShopProyec.xcdatamodel */,
+			);
+			currentVersion = B7BD38902BEFCC6C0027A75C /* SweaterShopProyec.xcdatamodel */;
+			path = SweaterShopProyec.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B7D90CC42BC32A160050D236 /* Project object */;
 }
