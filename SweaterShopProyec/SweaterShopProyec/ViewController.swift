@@ -7,8 +7,9 @@
 
 import UIKit
 import FirebaseDatabase
+import CoreData
 
-struct Producto {
+struct ProductoStruct {
     let id: String
     let brand: String
     let price: Double
@@ -73,8 +74,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var productos: [Producto] = []
-    var todosLosProductos: [Producto] = []
+    var productos: [ProductoStruct] = []
+    var todosLosProductos: [ProductoStruct] = []
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 5 // Espacio entre las celdas en la misma fila
@@ -110,6 +111,27 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         activityIndicator.startAnimating()
         
         cargarProductos()
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+        
+        let context = appDelegate.persistentContainer.viewContext
+            let fetchRequest: NSFetchRequest<Carrito> = Carrito.fetchRequest()
+            
+            do {
+                let carritos = try context.fetch(fetchRequest)
+                for carrito in carritos {
+                    print("Carrito ID: \(carrito.idCarrito ?? "")")
+                    if let items = carrito.items as? Set<ItemCarrito> {
+                        for item in items {
+                            print("Producto ID: \(item.producto?.idProducto ?? ""), Cantidad: \(item.cantidad)")
+                        }
+                    }
+                }
+            } catch {
+                print("Error al recuperar el carrito: \(error)")
+            }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -161,7 +183,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             if let productosDict = snapshot.value as? [String: [String: Any]] {
                 self.productos = productosDict.map { (key, value) in
                     // Crea un producto a partir de cada entrada en el diccionario
-                    return Producto(id: key, dict: value)
+                    return ProductoStruct(id: key, dict: value)
                 }
                 self.todosLosProductos = self.productos
 
@@ -188,7 +210,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let productoSeleccionado = productos[indexPath.row]
 
         let detalleViewController = storyboard?.instantiateViewController(withIdentifier: "DetalleViewController") as! DetalleViewController
-        detalleViewController.producto = productoSeleccionado
+        detalleViewController.productoStruct = productoSeleccionado
         
         navigationController?.pushViewController(detalleViewController, animated: true)
     }

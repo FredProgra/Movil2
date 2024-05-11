@@ -53,6 +53,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7D243232BF035790041E0CC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		B7D90CC32BC32A160050D236 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +79,7 @@
 		B7D90CCE2BC32A160050D236 /* SweaterShopProyec */ = {
 			isa = PBXGroup;
 			children = (
+				B7D243232BF035790041E0CC /* CoreData */,
 				B7D90CCF2BC32A160050D236 /* AppDelegate.swift */,
 				B7D90CD12BC32A160050D236 /* SceneDelegate.swift */,
 				B7D90CD52BC32A160050D236 /* Main.storyboard */,
