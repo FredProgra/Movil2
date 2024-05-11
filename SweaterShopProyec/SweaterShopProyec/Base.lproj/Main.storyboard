@@ -112,108 +112,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Knitted Sweater.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyH-KN-Uhy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knitted Sweater.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyH-KN-Uhy">
                                 <rect key="frame" x="30" y="56" width="212" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zy5-Lh-5dE">
+                                <rect key="frame" x="0.0" y="147" width="390" height="663"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YNr-v2-WzQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="663"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="642-uS-QtY">
+                                            <size key="itemSize" width="223" height="266"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="wqE-VG-vjh" customClass="CollectionViewCell" customModule="SweaterShopProyec" customModuleProvider="target">
+                                                <rect key="frame" x="70" y="0.0" width="250" height="250"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OZe-Ei-dCT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweater-1" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-PT-Uvh">
+                                                            <rect key="frame" x="5" y="5" width="240" height="190"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bom-Hz-DX1">
+                                                            <rect key="frame" x="5" y="203" width="237" height="39"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="39" id="1IM-62-Civ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="HcX-PT-Uvh" firstAttribute="leading" secondItem="OZe-Ei-dCT" secondAttribute="leading" constant="5" id="8If-Ep-Hsg"/>
+                                                        <constraint firstAttribute="trailing" secondItem="HcX-PT-Uvh" secondAttribute="trailing" constant="5" id="AIJ-FC-wls"/>
+                                                        <constraint firstItem="Bom-Hz-DX1" firstAttribute="leading" secondItem="OZe-Ei-dCT" secondAttribute="leading" constant="5" id="LGX-WC-a5q"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Bom-Hz-DX1" secondAttribute="trailing" constant="8" id="LO5-PX-svK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Bom-Hz-DX1" secondAttribute="bottom" constant="8" id="NFz-BI-5nw"/>
+                                                        <constraint firstItem="HcX-PT-Uvh" firstAttribute="top" secondItem="OZe-Ei-dCT" secondAttribute="top" constant="5" id="Ux5-az-Rsg"/>
+                                                        <constraint firstItem="Bom-Hz-DX1" firstAttribute="top" secondItem="HcX-PT-Uvh" secondAttribute="bottom" constant="8" symbolic="YES" id="lSV-ZU-2Rb"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="250" height="250"/>
+                                                <connections>
+                                                    <outlet property="sweaterDetalle" destination="Bom-Hz-DX1" id="EtX-l9-p8J"/>
+                                                    <outlet property="sweaterImg" destination="HcX-PT-Uvh" id="yFo-zg-st3"/>
+                                                    <outlet property="sweaterimg" destination="HcX-PT-Uvh" id="tYv-I9-dkc"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="amO-Fw-bCO" id="OF8-AX-HwV"/>
+                                            <outlet property="delegate" destination="amO-Fw-bCO" id="cMK-o7-HgS"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YNr-v2-WzQ" firstAttribute="trailing" secondItem="6Ca-3u-OdN" secondAttribute="trailing" id="3hn-pq-nzH"/>
+                                    <constraint firstItem="YNr-v2-WzQ" firstAttribute="top" secondItem="6Ca-3u-OdN" secondAttribute="top" id="V8A-yk-4Rn"/>
+                                    <constraint firstItem="YNr-v2-WzQ" firstAttribute="leading" secondItem="6Ca-3u-OdN" secondAttribute="leading" id="V9u-xO-dou"/>
+                                    <constraint firstItem="YNr-v2-WzQ" firstAttribute="bottom" secondItem="6Ca-3u-OdN" secondAttribute="bottom" id="Yn8-RY-pcQ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="aPZ-mf-mR7"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="6Ca-3u-OdN"/>
+                            </scrollView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ds4-hz-EGc">
-                                <rect key="frame" x="0.0" y="47" width="390" height="56"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="56"/>
                                 <color key="barTintColor" red="1" green="0.96634730639999999" blue="0.87710832819999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="amO-Fw-bCO" id="5V6-YR-bc1"/>
                                 </connections>
                             </searchBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zy5-Lh-5dE">
-                                <rect key="frame" x="0.0" y="147" width="390" height="663"/>
-                                <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D8h-QO-TRF">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="PDj-1d-Qfh"/>
-                                        </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vqb-Rs-tFI">
-                                            <size key="itemSize" width="128" height="128"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCollectionViewCell" id="YhY-Vv-aYi" customClass="CustomCollectionViewCell" customModule="SweaterShopProyec" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bJX-wr-leC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweaters_verde" translatesAutoresizingMaskIntoConstraints="NO" id="nPX-aT-caL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="nPX-aT-caL" firstAttribute="top" secondItem="bJX-wr-leC" secondAttribute="top" id="0JW-I5-2va"/>
-                                                        <constraint firstAttribute="bottom" secondItem="nPX-aT-caL" secondAttribute="bottom" id="7BE-72-XOn"/>
-                                                        <constraint firstItem="nPX-aT-caL" firstAttribute="leading" secondItem="bJX-wr-leC" secondAttribute="leading" id="ZvT-cW-qoB"/>
-                                                        <constraint firstAttribute="trailing" secondItem="nPX-aT-caL" secondAttribute="trailing" id="hob-bA-YXy"/>
-                                                    </constraints>
-                                                </collectionViewCellContentView>
-                                                <size key="customSize" width="390" height="150"/>
-                                                <connections>
-                                                    <outlet property="adsImage" destination="nPX-aT-caL" id="qbQ-Vj-Dr2"/>
-                                                </connections>
-                                            </collectionViewCell>
-                                        </cells>
-                                        <connections>
-                                            <outlet property="dataSource" destination="amO-Fw-bCO" id="sC7-PV-4Ot"/>
-                                            <outlet property="delegate" destination="amO-Fw-bCO" id="w85-5z-cxP"/>
-                                        </connections>
-                                    </collectionView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-F2-puf">
-                                        <rect key="frame" x="120" y="120" width="150" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="CXh-yh-tYT"/>
-                                            <constraint firstAttribute="height" constant="26" id="EHU-qm-IQN"/>
-                                        </constraints>
-                                        <color key="pageIndicatorTintColor" systemColor="systemPinkColor"/>
-                                        <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </pageControl>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="zEc-F2-puf" firstAttribute="centerX" secondItem="zy5-Lh-5dE" secondAttribute="centerX" id="BLi-Y4-AzU"/>
-                                    <constraint firstItem="D8h-QO-TRF" firstAttribute="leading" secondItem="6Ca-3u-OdN" secondAttribute="leading" id="Mdj-N6-CVQ"/>
-                                    <constraint firstItem="D8h-QO-TRF" firstAttribute="top" secondItem="6Ca-3u-OdN" secondAttribute="top" id="NJd-tB-9Jk"/>
-                                    <constraint firstItem="D8h-QO-TRF" firstAttribute="trailing" secondItem="6Ca-3u-OdN" secondAttribute="trailing" id="eZG-X2-5IV"/>
-                                    <constraint firstItem="zEc-F2-puf" firstAttribute="top" secondItem="6Ca-3u-OdN" secondAttribute="top" constant="120" id="fX3-tB-ve5"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="aPZ-mf-mR7"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="6Ca-3u-OdN"/>
-                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TNT-OW-paK"/>
                         <color key="backgroundColor" red="1" green="0.96477124410000004" blue="0.87410559350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="TNT-OW-paK" firstAttribute="trailing" secondItem="cyH-KN-Uhy" secondAttribute="trailing" constant="148" id="1yC-iA-NLN"/>
                             <constraint firstItem="TNT-OW-paK" firstAttribute="trailing" secondItem="zy5-Lh-5dE" secondAttribute="trailing" id="92o-uO-Px2"/>
                             <constraint firstItem="TNT-OW-paK" firstAttribute="bottom" secondItem="zy5-Lh-5dE" secondAttribute="bottom" id="JC1-2J-AnG"/>
-                            <constraint firstItem="Ds4-hz-EGc" firstAttribute="top" secondItem="TNT-OW-paK" secondAttribute="top" id="Jvn-9X-myp"/>
                             <constraint firstItem="zy5-Lh-5dE" firstAttribute="top" secondItem="Ds4-hz-EGc" secondAttribute="bottom" id="O6U-wF-EcQ"/>
+                            <constraint firstItem="Ds4-hz-EGc" firstAttribute="top" secondItem="cyH-KN-Uhy" secondAttribute="bottom" constant="11" id="Txn-a6-wt6"/>
                             <constraint firstItem="Ds4-hz-EGc" firstAttribute="leading" secondItem="TNT-OW-paK" secondAttribute="leading" id="dwQ-rn-hig"/>
+                            <constraint firstItem="cyH-KN-Uhy" firstAttribute="top" secondItem="TNT-OW-paK" secondAttribute="top" constant="9" id="kon-C1-kcI"/>
                             <constraint firstItem="Ds4-hz-EGc" firstAttribute="trailing" secondItem="TNT-OW-paK" secondAttribute="trailing" id="m5W-h3-sya"/>
+                            <constraint firstItem="cyH-KN-Uhy" firstAttribute="leading" secondItem="TNT-OW-paK" secondAttribute="leading" constant="30" id="wd8-sV-Bqn"/>
                             <constraint firstItem="zy5-Lh-5dE" firstAttribute="leading" secondItem="TNT-OW-paK" secondAttribute="leading" id="xFu-pl-zng"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AJs-By-S2M"/>
                     <connections>
-                        <outlet property="mycollectionView" destination="D8h-QO-TRF" id="nes-76-WVf"/>
-                        <outlet property="pages" destination="zEc-F2-puf" id="sEz-PH-fga"/>
+                        <outlet property="collectionView" destination="YNr-v2-WzQ" id="6GZ-JJ-PyJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tka-KN-OWU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2212" y="621"/>
+            <point key="canvasLocation" x="2209.2307692307691" y="620.61611374407585"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="fc6-7v-KzV">
@@ -369,17 +371,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RKD-lw-wek"/>
+        <segue reference="TFq-Rp-ALO"/>
         <segue reference="Y9v-g8-sJf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="login" width="450" height="450"/>
-        <image name="sweaters_verde" width="950" height="1095"/>
+        <image name="sweater-1" width="555" height="750"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
