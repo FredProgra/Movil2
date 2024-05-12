@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="axH-Cg-UrK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fjt-h4-Zj7">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -57,7 +57,7 @@
                                 <buttonConfiguration key="configuration" style="gray" title="Salir"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar Sesion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaW-uz-iO6">
-                                <rect key="frame" x="124" y="61" width="143" height="30"/>
+                                <rect key="frame" x="124" y="105" width="143" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -893,7 +893,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="TFq-Rp-ALO"/>
-        <segue reference="Y9v-g8-sJf"/>
+        <segue reference="X7h-Sw-b1q"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cart.fill.badge.plus" catalog="system" width="128" height="105"/>
