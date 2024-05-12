@@ -23,6 +23,7 @@
 		B7D90CD72BC32A160050D236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D90CD52BC32A160050D236 /* Main.storyboard */; };
 		B7D90CD92BC32A170050D236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D90CD82BC32A170050D236 /* Assets.xcassets */; };
 		B7D90CDC2BC32A170050D236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D90CDA2BC32A170050D236 /* LaunchScreen.storyboard */; };
+		B7EE5D412BF10DAB00943A21 /* CarritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EE5D402BF10DAB00943A21 /* CarritoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B7D90CD82BC32A170050D236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7D90CDB2BC32A170050D236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7D90CDD2BC32A170050D236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7EE5D402BF10DAB00943A21 /* CarritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				B7371AF12BF02CD6008E7454 /* ViewController3.swift */,
 				B7D90CD12BC32A160050D236 /* SceneDelegate.swift */,
 				B7D90CD52BC32A160050D236 /* Main.storyboard */,
+				B7EE5D402BF10DAB00943A21 /* CarritoViewController.swift */,
 				B71CB60C2BE8035300960617 /* LoginViewController.swift */,
 				B7D90CD32BC32A160050D236 /* ViewController.swift */,
 				B7D243152BF00F620041E0CC /* DetalleViewController.swift */,
@@ -190,6 +193,7 @@
 				B7D243122BEFE7490041E0CC /* ProductoCollectionViewCell.swift in Sources */,
 				B7371AF62BF03237008E7454 /* CustomTableViewCell.swift in Sources */,
 				B71CB6122BE8053900960617 /* RegisterViewController.swift in Sources */,
+				B7EE5D412BF10DAB00943A21 /* CarritoViewController.swift in Sources */,
 				B7BD38982BEFD9740027A75C /* SweaterShopProyec.xcdatamodeld in Sources */,
 				B71CB60D2BE8035300960617 /* LoginViewController.swift in Sources */,
 			);
