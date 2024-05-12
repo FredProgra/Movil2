@@ -59,11 +59,20 @@ class CarritoViewController: UIViewController, UITableViewDataSource, UITableVie
         } catch {
             print("Error al cargar el carrito: \(error)")
         }
-        
+        actualizarTotales()
         // Actualiza la tabla
         tableView.reloadData()
     }
 
+    func actualizarTotales() {
+        let cantidadProductos = carrito?.items?.count ?? 0
+        cantidadProductosLabel.text = "\(cantidadProductos)"
+
+        if let items = carrito?.items?.allObjects as? [ItemCarrito] {
+            let totalCarrito = items.reduce(0, { $0 + (Double($1.cantidad) * ($1.producto?.price ?? 0.0)) })
+            totalCarritoLabel.text = "S/. \(totalCarrito)"
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return carrito?.items?.count ?? 0
@@ -84,5 +93,32 @@ class CarritoViewController: UIViewController, UITableViewDataSource, UITableVie
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Elimina el ItemCarrito de Core Data
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            let context = appDelegate.persistentContainer.viewContext
+            if let itemCarrito = carrito?.items?.allObjects[indexPath.row] as? ItemCarrito {
+                context.delete(itemCarrito)
+                do {
+                    try context.save()
+                    // Elimina el producto del carrito
+                    carrito?.removeFromItems(itemCarrito)
+                    
+                    actualizarTotales()
+                    
+                    // Recarga la tabla
+                    tableView.reloadData()
+                } catch {
+                    print("Error al eliminar el item del carrito: \(error)")
+                }
+            }
+        }
+    }
+
+
 
 }
