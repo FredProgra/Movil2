@@ -11,6 +11,8 @@
 		B71CB6092BE802AB00960617 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B71CB6082BE802AB00960617 /* FirebaseDatabase */; };
 		B71CB60D2BE8035300960617 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB60C2BE8035300960617 /* LoginViewController.swift */; };
 		B71CB6122BE8053900960617 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB6112BE8053900960617 /* RegisterViewController.swift */; };
+		B7371AF22BF02CD6008E7454 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7371AF12BF02CD6008E7454 /* ViewController3.swift */; };
+		B7371AF62BF03237008E7454 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7371AF52BF03237008E7454 /* CustomTableViewCell.swift */; };
 		B7BD38952BEFD9560027A75C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7BD38942BEFD9560027A75C /* GoogleService-Info.plist */; };
 		B7BD38982BEFD9740027A75C /* SweaterShopProyec.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7BD38962BEFD9740027A75C /* SweaterShopProyec.xcdatamodeld */; };
 		B7D243122BEFE7490041E0CC /* ProductoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D243112BEFE7490041E0CC /* ProductoCollectionViewCell.swift */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		B71CB60C2BE8035300960617 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B71CB6112BE8053900960617 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B7371AF12BF02CD6008E7454 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		B7371AF52BF03237008E7454 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		B7BD38942BEFD9560027A75C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7BD38972BEFD9740027A75C /* SweaterShopProyec.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SweaterShopProyec.xcdatamodel; sourceTree = "<group>"; };
 		B7D243112BEFE7490041E0CC /* ProductoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				B7D90CCF2BC32A160050D236 /* AppDelegate.swift */,
+				B7371AF52BF03237008E7454 /* CustomTableViewCell.swift */,
+				B7371AF12BF02CD6008E7454 /* ViewController3.swift */,
 				B7D90CD12BC32A160050D236 /* SceneDelegate.swift */,
 				B7D90CD52BC32A160050D236 /* Main.storyboard */,
 				B71CB60C2BE8035300960617 /* LoginViewController.swift */,
@@ -168,11 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7371AF22BF02CD6008E7454 /* ViewController3.swift in Sources */,
 				B7D243162BF00F620041E0CC /* DetalleViewController.swift in Sources */,
 				B7D90CD42BC32A160050D236 /* ViewController.swift in Sources */,
 				B7D90CD02BC32A160050D236 /* AppDelegate.swift in Sources */,
 				B7D90CD22BC32A160050D236 /* SceneDelegate.swift in Sources */,
 				B7D243122BEFE7490041E0CC /* ProductoCollectionViewCell.swift in Sources */,
+				B7371AF62BF03237008E7454 /* CustomTableViewCell.swift in Sources */,
 				B71CB6122BE8053900960617 /* RegisterViewController.swift in Sources */,
 				B7BD38982BEFD9740027A75C /* SweaterShopProyec.xcdatamodeld in Sources */,
 				B71CB60D2BE8035300960617 /* LoginViewController.swift in Sources */,
